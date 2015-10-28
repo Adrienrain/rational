@@ -8,17 +8,17 @@ using namespace std;
 
 class Rational{
 public:
-    Rational(int n, int d){
+    Rational(int n, int d){   // rational number constructor for two parameters
         numerator = n;
         denominator = d;
     } // end of constructor
 
-    Rational(int wholeNumber){
+    Rational(int wholeNumber){   // whole number constructor
         numerator = wholeNumber;
         denominator = 1;
     }
 
-    Rational(){
+    Rational(){    // default constructor
         numerator = 0;
         denominator = 1;
     }
@@ -39,11 +39,54 @@ public:
         return denominator;
     } // end denominator getter
 
+/*    void operator <<() {
+ *         // hmmm...
+ *    }
+ *
+ *    void operator >>() {
+ *         // hmmm...
+ *    }
+ *
+ *    void operator <() {
+ *         // hmmm...
+ *    }
+ *
+ *    void operator <=() {
+ *         // hmmm...
+ *    }
+ *
+ *    void operator >() {
+ *         // hmmm...
+ *    }
+ *
+ *    void operator >=() {
+ *         // hmmm...
+ *    }
+ *
+ *    void operator +() {
+ *         // hmmm...
+ *    }
+ *
+ *    void operator -() {
+ *         // hmmm...
+ *    }
+ *
+ *    void operator *() {
+ *         // hmmm...
+ *    }
+ *
+ *    void operator /() {
+ *         // hmmm...
+ *    }
+ */
+
+
+
 
 
 
 private:
-    int numerator, denominator;
+    int numerator, denominator, x=1;
 
 
 
